@@ -1,0 +1,100 @@
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo {
+    height: 100%;
+    padding: 1%;
+    text-align: center;
+}
+
+.nav {
+    height: 10%;
+    padding: 1%;
+    justify-content: right;
+}
+
+nav ul {
+justify-content: space-between;
+margin-left: auto;
+margin-right: auto;
+}
+
+.header {
+    width: 100%;
+}
+
+ul {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li {
+    display: inline-block;
+    justify-content: right;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.heroImg {
+height: 600px;
+padding: 25px;
+}
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.naama img {
+    width: 100%;
+    justify-content: center;
+}
+.footer {
+    background-color: #373738;
+    color: #ffffff;
+}
+
+.flexcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.workgrid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.2rem;
+}
+
+.habitat {
+    grid-area: right content;
+    height: auto;
+    width: 100%;
+}
+
+.nws {
+    grid-area: left content;
+    height: auto;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .flexcontainer {
+        flex-direction: column;
+    } 
+
+    .workgrid {grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        grid-template-areas:
+        "habitat"
+        "nws";
+
+    }
+}
+
