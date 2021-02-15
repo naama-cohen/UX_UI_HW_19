@@ -2,6 +2,7 @@
     <head>
         <title></title>
         <link rel="stylesheet" href="css/style.css">
+        <head></head><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
     </head>
     <body>
         <header class="nav">
@@ -9,15 +10,14 @@
                 <img src="img/logo.png" class="logo">
                 <nav class="inline-block">
                     <ul>
-                        <li class="inline-block">About</li>
-                        <li class="inline-block">Skills</li>
-                        <li class="inline-block">Work</li>
-                        <li class="inline-block">Contact</li>
+                        <li class="inline-block" id="skills">Skills</li>
+                        <li class="inline-block" id="work">Work</li>
+                        <li class="inline-block" id="home">Home</li>
                     </ul>                        
                 </nav>
             </div>
         </header>
-        <section class="heroImg">
+        <section class="heroImg" id="myhome">
             <div class="content">
                <div class="naama"><img src="img/san_fran.jpg"></div> 
                 <p>This is a paragraph about myself!</p>
@@ -28,7 +28,7 @@
  <!--  My UX Skills section coded using CSS flex -->
 
         <section class="myskills">
-            <h1>My UX Skills</h1>
+            <h1 id="myskills">My UX Skills</h1>
             <div class="flexcontainer">
                 <div class="miro"> 
                     <img src="img/figma.png" height="100px";> 
@@ -50,7 +50,7 @@
 
 <!--  My Work section constructed using CSS grid -->
 
-        <section class="mywork">
+        <section class="mywork" id="mywork">
             <h1>My Work</h1>
             <div class="workgrid">
                 <div class="habitat">
@@ -86,4 +86,5 @@
         </footer>
     </div>
 </body>  
+<script src="js/index.js"></script>
 </html>

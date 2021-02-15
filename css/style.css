@@ -1,12 +1,18 @@
 .inline-block {
     display: inline-block;
     vertical-align: top;
+    float: right;
+    margin-right: 25px;
 }
 
 .logo {
     height: 100%;
     padding: 1%;
     text-align: center;
+}
+
+.myskills {
+    height: 100%
 }
 
 .nav {
@@ -23,6 +29,9 @@ margin-right: auto;
 
 .header {
     width: 100%;
+    position: fixed;
+    height: 100px;
+    background-color: #ffffff;
 }
 
 ul {
